@@ -1,4 +1,4 @@
-# Capstone28group2
+# Crypto Demyth website
 
 ENGINE': 'django.db.backends.mysql',
         'NAME': 'gdax',

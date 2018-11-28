@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>可创建漂亮动态背景动画特效的jQuery插件|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="demo/style/index.css">
+	<link rel="stylesheet" type="text/css" href="demo/style/prism.css">
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>可创建漂亮动态背景动画特效的jQuery插件 <span>A jQuery library for creating beautiful dynamic or static visual effects</span></h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Layout-Interface/201508072370.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+			</div>
+		</header>
+	</div>
+	<div id="container">
+			<div id="main">
+				<h1 class="title"><span class="js">quietflow</span>.js</h1>
+				<p class="descrip">A jQuery library for creating beautiful dynamic or static visual effects.</p>
+
+<div class="codePreview" style="width: 270px">
+<div id="squareFlash">
+<pre><code class="language-javascript">
+$("body").quietflow({
+	theme : "squareFlash",
+	squareSize : 20,
+	maxRed : 255,
+	maxGreen : 40,
+	maxBlue : 100,
+	speed : 200
+})</code></pre>
+</div>
+</div>
+
+<div class="codePreview" style="width: 240px">
+<div id="vortex">
+<pre><code class="language-javascript">
+$("body").quietflow({
+	theme : "vortex",
+	miniRadii : 40
+})</code></pre>
+</div>
+</div>
+
+<div class="codePreview" style="width: 420px">
+<div id="bouncingBalls">
+<pre><code class="language-javascript">
+$("body").quietflow({
+	theme : "bouncingBalls",
+	specificColors : ["rgba(255,10,50,.5)", 
+				"rgba(10,255,50,.5)", 
+				"rgba(10,50,255,.5)", 
+				"rgba(0,0,0,.5)"]
+})</code></pre>
+</div>
+</div>
+
+<div class="codePreview" style="width: 300px">
+<div id="shootingLines">
+<pre><code class="language-javascript">
+$("body").quietflow({
+	theme : "shootingLines",
+	backgroundCol : "#141C26",
+	lineColor : "#05E0E0",
+	lineGlow : "#00ff00"
+})</code></pre>
+</div>
+</div>
+
+<div class="codePreview" style="width: 300px">
+<div id="simpleGradient">
+<pre><code class="language-javascript">
+$("body").quietflow({
+	theme : "simpleGradient",
+	primary : "#B066FE",
+	accent : "#63E2FF"
+})</code></pre>
+</div>
+</div>
+
+<div class="codePreview" style="width: 250px">
+<div id="starfield">
+<pre><code class="language-javascript">
+$("body").quietflow({
+	theme : "starfield"
+})</code></pre>
+</div>
+</div>
+
+<div class="codePreview" style="width: 300px">
+<div id="layeredTriangles">
+<pre><code class="language-javascript">
+$("body").quietflow({
+	theme : "layeredTriangles"
+})</code></pre>
+</div>
+</div>
+
+<div class="codePreview" style="width: 420px">
+<div id="cornerSpikes">
+<pre><code class="language-javascript">
+$("body").quietflow({
+	theme : "cornerSpikes",
+	specificColors : ["#009245", "#FCEE21"]
+})</code></pre>
+</div>
+</div>
+
+<div class="codePreview" style="width: 440px">
+<div id="floatingBoxes">
+<pre><code class="language-javascript">
+$("body").quietflow({
+	theme : "floatingBoxes",
+	specificColors : ["rgba(46,204,113,.5)", 
+					"rgba(52,152,219,.5)", 
+					"rgba(231,76,60,.5)", 
+					"rgba(155,89,182,.5)", 
+					"rgba(241,196,15,.5)"],
+	boxCount : 500,
+	backgroundCol : "black"
+})</code></pre>
+</div>
+</div>
+			<select id="effects">
+				<option value="starfield">starfield</option>
+				<option value="squareFlash">squareFlash</option>
+				<option value="vortex">vortex</option>
+				<option value="bouncingBalls">bouncingBalls</option>
+				<option value="shootingLines">shootingLines</option>
+				<option value="simpleGradient">simpleGradient</option>
+				<option value="layeredTriangles">layeredTriangles</option>
+				<option value="cornerSpikes">cornerSpikes</option>
+				<option value="floatingBoxes">floatingBoxes</option>
+			</select>
+
+			</div>
+		</div>
+	
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="lib/quietflow.js"></script>
+	<script type="text/javascript" src="demo/js/index.js"></script>
+	<script type="text/javascript" src="demo/js/prism.js"></script>
+</body>
+</html>

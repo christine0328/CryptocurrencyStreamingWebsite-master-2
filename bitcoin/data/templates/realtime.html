@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Realtime</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+	<!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<!--<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
+	<!--<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+        <!--_____for tabs_____-->
+	<!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<!--<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	<script src="https://cdnjs.com/libraries/bulma"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!--__________for tabs______-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,500' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--in order to use&ndash;&gt;$.inArray("John",arr)-->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		{% load static %}
+	<!--"{% static 'JS/try1/animate.css' %}"-->
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/banner/normalize.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/banner/htmleaf-demo.css' %}">
+	<link rel="shortcut icon" href="favicon.ico">
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'css/try/style.css' %}">-->
+	<!-- Google Webfonts -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/try1/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/try1/icomoon.css' %}">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="{% static 'css/try1/simple-line-icons.css' %}">
+	<!--&lt;!&ndash; Magnific Popup &ndash;&gt;-->
+	<!--<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">-->
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="{% static 'css/try1/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/orderbook_style.css' %}">
+	<!-- Modernizr JS -->
+	<script src="{% static 'JS/try1/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'JS/try1/respond.min.js' %}"></script>
+
+	<![endif]-->
+
+	<!--Depthchart-->
+	<link rel="stylesheet" href="{% static 'css/depth_style.css' %}">
+
+
+	<!--<script src="{% static 'JS/try/bootstrap.min.js' %}"></script>-->
+	<!--<script src="{% static 'JS/try/jquery.min.js' %}"></script>-->
+
+
+	<!--<script src="{% static 'JS/candlesticks.js' %}"></script>-->
+    <script src="http://github.highcharts.com/stock/highstock.js"></script>
+	<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+</head>
+
+<header id="fh5co-header" role="banner">
+		<canvas id="canvas"  ></canvas>
+
+		<!--<br>-->
+
+		<div class="htmleaf-header">
+			<a class="navbar-brand" href="home">CryptoDemyth</a>
+
+			<ul class="nav navbar-nav">
+
+									  <li  class="dropdown "><a href="#"  id="btnname" class="dropdown-toggle navbar-brand" data-toggle="dropdown" style="background-color:white; color:black; padding:20px 10px 5px 10px"> BTC-USD      &#x25BC<br>select product </a>
+									 	 <ul class="dropdown-menu" id="product">
+											<li ><a href=#>BTC-USD</a></li>
+											<li ><a href=#>ETH-USD</a></li>
+											<li ><a href=#>LTC-USD</a></li>
+											<!--<li><a href="#">List Sidebar</a></li>-->
+										 </ul>
+									  </li>
+									</ul>
+			<ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="./home"><span  style="color:red">Home <span class="border"></span></span></a></li>
+								<li><a href="./history"><span  style="color:red" >History <span class="border"></span></span></a></li>
+								<li><a href="./realtime"><span  style="color:red">Realtime <span class="border"></span></span></a></li>
+								<li><a href="./insight_new"><span  style="color:red">Insight <span class="border"></span></span></a></li>
+							</ul>
+			<div id="fh5co-main">
+		<div class="fh5co-intro text-center">
+			<!--<div class="container">-->
+				<div class="row">
+					<!--<div class="col-md-8 col-md-offset-2">-->
+						<h1 class="intro-lead">Realtime</h1>
+
+						<p class="" style="color:grey; font-size:11.5">Real-time transactional data in different Exchanges </p>
+
+					<!--</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</header>
+	<!-- END .header -->
+
+
+
+	<div class="fh5co-portfolio-item ">
+				<!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+				<!--<title>BTC-USD-GDAX</title>-->
+		<div class="col-md-4">
+	<!--<div class="container">-->
+		<!--<div class="row">-->
+			<!--<div class="col-lg-8 col-lg-offset-2">-->
+                <!--&lt;!&ndash;<div id="container000" style="height: 300px; min-width: 300px"></div>&ndash;&gt;-->
+				<!--<div class="panel-group" id="changecolor">-->
+					<div class="panel panel-primary" >
+						<div class="panel-heading text-center" >
+							<h4 id="orderTitle">
+									<br>
+								<p id="orderG" class="col-md-6"><a href="#" class="btn btn-primary">Coinbase</a></p>
+								<p id="orderB" class="col-md-6"><a href="#" class="btn btn-primary">Bitstamp</a></p>
+								<br>BTC-USD Order Book
+
+							<!--<div class="col-md-8">-->
+						<!--</div>-->
+<!--<a class="button is-primary is-outlined">Outlined</a>-->
+
+<!--<a class="button is-info is-outlined">Outlined</a>-->
+                            </h4>
+						</div>
+
+						<div class="panel-body">
+							<!--<h6><a id="source" class="text-right" href="https://www.cryptocompare.com/"><strong>Source:</strong> CryptoCompare</a></h6>-->
+							<!--<div class="row btn-row" id="try">-->
+								<!--&lt;!&ndash;<div class="col-xs-4">&ndash;&gt;-->
+									<!--&lt;!&ndash;<h3 id="stream-text">Streaming...</h3>&ndash;&gt;-->
+								<!--&lt;!&ndash;</div>&ndash;&gt;-->
+								<!--&lt;!&ndash;<div class="col-xs-2">&ndash;&gt;-->
+									<!--&lt;!&ndash;<a class="btn btn-success btn-lg subon" id="subscribe">Subscribe</a>&ndash;&gt;-->
+								<!--&lt;!&ndash;</div>&ndash;&gt;-->
+								<!--&lt;!&ndash;<div class="col-xs-2">&ndash;&gt;-->
+									<!--&lt;!&ndash;<a class="btn btn-danger btn-lg" id="unsubscribe">Unsubscribe</a>&ndash;&gt;-->
+								<!--&lt;!&ndash;</div>&ndash;&gt;-->
+								<!--&lt;!&ndash;<div class="col-xs-12 text-center">&ndash;&gt;-->
+									<!--&lt;!&ndash;<h6>Currently streaming from:</h6><i id="sub-exchanges"></i>&ndash;&gt;-->
+								<!--&lt;!&ndash;</div>&ndash;&gt;-->
+							<!--</div>-->
+							<table class="table1" border="0" cellspacing="80" cellpadding="40" align="center">
+								<thead style="color:white; align: center;">
+									<tr>
+										<th>Market</th>
+										<th>Price</th>
+										<th>Quantity</th>
+									</tr>
+
+								</thead>
+								<tbody id="sells">
+
+                                <tr>
+										<th> </th>
+										<th> </th>
+										<th> </th>
+                                </tr>
+
+								</tbody>
+							</table>
+
+                            <table class="table2" border="0" cellspacing="80" cellpadding="40" align="center" >
+								<thead style="color:white; align: center;">
+                                <tr>
+                                        <th> </th>
+                                        <th> </th>
+                                        <th> </th>
+                                </tr>
+								</thead>
+								<tbody id="buys">
+                                <tr>
+										<th> </th>
+										<th> </th>
+										<th> </th>
+                                </tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="col-md-8">
+<!--<div class="container">-->
+		<!--<div class="row">-->
+			<!--<div class="col-lg-8 col-lg-offset-2">-->
+                <!--&lt;!&ndash;<div id="container000" style="height: 300px; min-width: 300px"></div>&ndash;&gt;-->
+				<!--<div class="panel-group" >-->
+
+
+
+							<ul id="myTab" class="nav nav-tabs">
+								<h3 align="center">Realtime candle chart</h3>
+
+
+									<li class="dropdown">
+									 <a href="#" id="myTabDrop2" class="dropdown-toggle"
+									   data-toggle="dropdown">Coinbase <br> 1m
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu" id="pcoinbase"  role="menu" aria-labelledby="myTabDrop1">
+										<li><a href="#candlestick000" tabindex="-1" data-toggle="tab">1m</a></li>
+										<li><a href="#candlestick000" tabindex="-1" data-toggle="tab">5m</a></li>
+										<li><a href="#candlestick000" tabindex="-1" data-toggle="tab">30m</a></li>
+										<li><a href="#candlestick000" tabindex="-1" data-toggle="tab">1h</a></li>
+									</ul>
+
+								</li>
+								<li class="dropdown">
+									 <a href="#" id="myTabDrop1" class="dropdown-toggle"
+									   data-toggle="dropdown">Bitstamp <br> 1m
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu" id="pbitstamp"  role="menu" aria-labelledby="myTabDrop1">
+										<li><a href="#container000" tabindex="-1" data-toggle="tab">1m</a></li>
+										<li><a href="#container000" tabindex="-1" data-toggle="tab">5m</a></li>
+										<li><a href="#container000" tabindex="-1" data-toggle="tab">30m</a></li>
+										<li><a href="#container000" tabindex="-1" data-toggle="tab">1h</a></li>
+									</ul>
+
+								</li>
+
+
+								<!--<li class="dropdown">-->
+									<!--<a href="#" id="myTabDrop3" class="dropdown-toggle"-->
+									   <!--data-toggle="dropdown">Java-->
+										<!--<b class="caret"></b>-->
+									<!--</a>-->
+									<!--<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">-->
+										<!--<li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>-->
+										<!--<li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>-->
+									<!--</ul>-->
+								<!--</li>-->
+							</ul>
+
+                            <div id="myTabContent" class="tab-content">
+								<div class="tab-pane fade in active" id="candlestick000" style="height: 500px; min-width: 500px"></div>
+
+								<div class="tab-pane fade" id="container000" style="height: 500px; min-width: 500px">
+									</div>
+
+									<div class="tab-pane fade" id="jmeter">
+										<!--<p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>-->
+									</div>
+									<div class="tab-pane fade" id="ejb">
+										<!--<p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。-->
+										<!--</p>-->
+									</div>
+                            </div>
+
+                            <!--depth chart-->
+
+				<div>
+					<div class="col-md-10">
+					<h3 align="center" >
+						<br><br>
+						Realtime DepthChart		</h3>
+				</div>
+					<div class="col-md-2">
+						<br>
+										<p id="depth2"><a href="#" class="btn btn-primary">Coinbase</a></p>
+								<p id="depth1"><a href="#" class="btn btn-primary">Bitstamp</a></p>
+								</div>
+
+					<div  class="nav nav-tabs">
+
+
+
+
+
+								<li  class="active" id="d2"><a href="#" data-toggle="tab" >Coinbase</a></li>
+								<li id="d1"><a href="#" data-toggle="tab" >Bitstamp</a></li>
+									</div>
+				<!--<div class="col-md-10">-->
+							<div id="chartdiv" >
+
+							</div>
+
+							<!--</div>-->
+
+							</div>
+
+
+
+                            <!--<ul id="2" class="nav nav-tabs">-->
+                               <!--<h3 align="center">Realtime DepthChart</h3>-->
+
+                                <!--<li class="active" id="3">-->
+                                    <!--<a href="#chartdiv" data-toggle="tab" >Bitstamp</a>-->
+                                <!--</li>-->
+                                <!--<li id="1">-->
+									<!--<a href="#chartdivsec" data-toggle="tab" >Coinbase</a>-->
+								<!--</li>-->
+
+                            <!--</ul>-->
+                            <!--<div id="myTabContent2" class="tab-content">-->
+                                <!--<div class="tab-pane fade in active" id="chartdiv" style="height:70%;"></div>-->
+                                <!--<div class="tab-pane fade" id="chartdivsec" style="height:70%"></div>-->
+							<!--</div>-->
+
+                            <!--</div>-->
+							<!--<br></br>-->
+							<!--<h3 align="center">Realtime DepthChart</h3>-->
+							<!--<div id="chartdiv" ></div>-->
+								<!--</div>-->
+													<!--</div>-->
+
+
+
+										<!--</div>-->
+									<!--</div>-->
+			 </div>
+								<!--####################3-->
+							<!--<div class="fh5co-portfolio-figure animate-box" style="background-image: url(images/work_1.jpg);"></div>-->
+
+								<!--<div class="fh5co-portfolio-description">-->
+									<!--<p><a href="#" class="btn btn-primary">BTC-USD GDAX</a></p>-->
+								<!--</div>-->
+
+									<!--<div id="main4" style="width: 900px;height:600px;"></div>-->
+
+		<!--</div>-->
+
+	<!--</div>-->
+	<!--__________________________________________________-->
+
+
+		<!--____________________________________________________-->
+
+
+
+
+
+
+
+
+
+<!--<div id="container000" style="height: 500px; min-width: 500px"></div>-->
+
+	<footer id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center">
+					<p>&copy; CryptoDW. All Rights Reserved. <br>Created by Group 28 </p>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script src="{% static 'JS/banner.js' %}"></script>
+    <script src="{% static 'JS/stream.js' %}"></script>
+	<!-- jQuery -->
+	<script src="{% static 'JS/try1/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'JS/try1/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'JS/try1/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'JS/try1/jquery.waypoints.min.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'JS/try1/jquery.magnific-popup.min.js' %}"></script>
+	<!-- Main JS -->
+	<script src="{% static 'JS/try1/main.js' %}"></script>
+	<script src="{% static 'JS/ccc-streamer-utilities.js' %}"></script>
+	<!--DepthChart-->
+	<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+	<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+	<script src="https://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js"></script>
+	<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+	<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+	<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+	<script src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
+
+
+
+</html>

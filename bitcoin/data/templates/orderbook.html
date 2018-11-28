@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>orderbook</title>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+
+    {% load static %}
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">-->
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css"/>
+    <!--&lt;!&ndash;<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>&ndash;&gt;-->
+    <link rel="stylesheet" href="{% static 'css/jquery.dataTables.css' %}" type="text/css"/>
+    <script src="{% static 'JS/stream.js' %}"></script>
+    <script src="{% static 'JS/jquery.dataTables.js' %}"> </script>
+    <script src="{% static 'JS/Orderbook.js' %}"> </script>
+</head>
+<body>
+    <table id="table1" class="table1">
+        <thead>
+        <tr>
+            <th>market</th>
+            <th>market size</th>
+            <th>Price(USD)</th>
+
+
+        </tr>
+        </thead>
+        <tfoot>
+        <tr id ='cell'>
+
+        </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>orderbook</title>-->
+    <!--{% load static %}-->
+    <!--&lt;!&ndash;<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">&ndash;&gt;-->
+    <!--&lt;!&ndash;<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">&ndash;&gt;-->
+    <!--<script src="{% static 'JS/jquery.dataTables.js' %}"> </script>-->
+    <!--<script src="{% static 'JS/index.js' %}"> </script>-->
+
+    <!--&lt;!&ndash;&lt;!&ndash;<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>&ndash;&gt;&ndash;&gt;-->
+    <!--<link rel="stylesheet" href="{% static 'css/jquery.dataTables.css' %}" >-->
+    <!--<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >-->
+    <!--&lt;!&ndash;&lt;!&ndash;<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>&ndash;&gt;&ndash;&gt;-->
+
+<!--</head>-->
+<!--<body>-->
+   <!--<table id="datatables" class="display">-->
+        <!--<thead>-->
+        <!--<tr>-->
+            <!--<th>market size</th>-->
+            <!--<th>Price(USD)</th>-->
+            <!--<th>My size</th>-->
+
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tfoot>-->
+        <!--<tr id ='cell'>-->
+
+        <!--</tr>-->
+        <!--</tfoot>-->
+    <!--</table>-->
+<!--</body>-->
+<!--</html>-->

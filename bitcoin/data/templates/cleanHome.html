@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>History</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,500' rel='stylesheet' type='text/css'>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0/echarts.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts-gl@1.1.1/dist/echarts-gl.min.js"></script>
+
+	{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'css/banner/normalize.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/banner/htmleaf-demo.css' %}">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Webfonts -->
+		<!--##<link rel="stylesheet" href="{% static 'css/try1/bootstrap.min.css' %}" type="text/css"/>-->
+		<!--##<script src="{% static 'JS/try1/jquery.min.js' %}"></script>-->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/try1/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/try1/icomoon.css' %}">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="{% static 'css/try1/simple-line-icons.css' %}">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="{% static 'css/try1/style.css' %}">
+	<!-- Modernizr JS -->
+	<script src="{% static 'JS/try1/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'JS/try1/respond.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'JS/jquery-3.3.1.js' %}"></script>
+	<![endif]-->
+	<!--<script src="{% static 'JS/charts.js' %}"></script>-->
+	<!--<script type="text/javascript">-->
+
+			<!--$("document").ready(function() {-->
+
+            <!--document.getElementById("change").addEventListener("click", function (evt) {-->
+                <!--changeContent();-->
+           	 		<!--});-->
+    		<!--});-->
+              <!--function changeAllTheContent() {-->
+            <!--$("#main3").html("<p>This is a paragraph</p>");-->
+        <!--}-->
+
+	<!--</script>-->
+	</head>
+	<!--<div>-->
+
+	<!--<header id="fh5co-header" role="banner" class="htmleaf-container">-->
+<header id="fh5co-header" role="banner">
+		<canvas id="canvas"  ></canvas>
+
+		<!--<br>-->
+
+		<div class="htmleaf-header">
+			<a class="navbar-brand" href="home">CryptoDemyth</a>
+
+			<ul class="nav navbar-nav">
+
+									  <li  class="dropdown "><a href="#"  class="dropdown-toggle navbar-brand" data-toggle="dropdown" style="background-color:white; color:black; padding:20px 10px 5px 10px"> BTC-USD      &#x25BC<br>select product </a>
+									 	 <ul class="dropdown-menu" id="product">
+											<li ><a href=#>BTC-USD</a></li>
+											<li ><a href=#>ETH-USD</a></li>
+											<li ><a href=#>LTC-USD</a></li>
+											<!--<li><a href="#">List Sidebar</a></li>-->
+										 </ul>
+									  </li>
+									</ul>
+			<ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="./home"><span>Home <span class="border"></span></span></a></li>
+								<li><a href="./history"><span>History <span class="border"></span></span></a></li>
+								<li><a href="./realtime"><span>Realtime <span class="border"></span></span></a></li>
+								<li><a href="./insight_new"><span>Insight <span class="border"></span></span></a></li>
+							</ul>
+			<div id="fh5co-main">
+		<div class="fh5co-intro text-center">
+			<!--<div class="container">-->
+				<div class="row">
+					<!--<div class="col-md-8 col-md-offset-2">-->
+						<h1 class="intro-lead">History</h1>
+
+
+						<p class="">The demonstration and comparison of cryptocurrencies historical Data in different Exchanges </p>
+
+					<!--</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</header>
+	<!-- END .header -->
+
+
+
+<!--______________-->
+		<div id="fh5co-portfolio">
+			<div class="fh5co-portfolio-item ">
+				<!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+				<!--<title>BTC-USD-GDAX</title>-->
+
+				<div id="main3" style="width: 1800px;height:500px;">
+				</div>
+				<!--####################3-->
+				<!--<div class="fh5co-portfolio-figure animate-box" style="background-image: url(images/work_1.jpg);"></div>-->
+
+				<!--<div class="fh5co-portfolio-description">-->
+					<!--<p><a href="#" class="btn btn-primary">BTC-USD GDAX</a></p>-->
+				<!--</div>-->
+
+					<!--<div id="main4" style="width: 900px;height:600px;"></div>-->
+					<div class="fh5co-portfolio-description">
+					<h2 id="candlename">History Candle Chart</h2>
+					<p>Historical data of cryptocurrencies in different exchange</p>
+					<p id="bitbit"><a href="#" class="btn btn-primary">Bitstamp</a></p>
+					<p id="gdxgdx"><a href="#" class="btn btn-primary">Coinbase</a></p>
+					<!--<p><a href="#" class="btn btn-primary">LTC/GDAX</a></p>-->
+					<!--<p><a href="#" class="btn btn-primary">LTC/Bitstamp</a></p>-->
+					<!--<p><a href="#" class="btn btn-primary">ETH/GDAX</a></p>-->
+					<!--<p><a href="#" class="btn btn-primary">ETH/Bitstamp</a></p>-->
+					<!--<button id="change">Change Content</button>-->
+				</div>
+
+			</div>
+			<span></span>>
+			<div class="fh5co-portfolio-item fh5co-img-right">
+				<div class="fh5co-portfolio-figure animate-box" style="background-image: url(images/work_2.jpg);"></div>
+				<div class="fh5co-portfolio-description">
+					<!--<div id="main4" style="width: 900px;height:600px;"></div>-->
+					<h2 id="pricecomparename">BTC-USD Price Comparison</h2>
+					<p>Price Comparison between GDAX and Bitstamp</p>
+					<!--<p><a href="#btcPrice" class="btn btn-primary">BTC</a></p>-->
+					<!--<p><a href="#ltcPrice" class="btn btn-primary">LTC</a></p>-->
+					<!--<p><a href="#ethPrice" class="btn btn-primary">ETH</a></p>-->
+				</div>
+				<div id="main4" style="width: 2000px;height:500px;"></div>
+			</div>
+
+			<!--<div class="fh5co-portfolio-item ">-->
+				<!--<div class="fh5co-portfolio-figure animate-box" style="background-image: url(images/work_3.jpg);"></div>-->
+				<!--<div class="fh5co-portfolio-description">-->
+					<!--<h2>Project Third</h2>-->
+					<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+					<!--<p><a href="#" class="btn btn-primary">Read the casetudy</a></p>-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--<div class="fh5co-portfolio-item fh5co-img-right">-->
+				<!--<div class="fh5co-portfolio-figure animate-box" style="background-image: url(images/work_4.jpg);"></div>-->
+				<!--<div class="fh5co-portfolio-description">-->
+					<!--<h2>Project Fourth</h2>-->
+					<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+					<!--<p><a href="#" class="btn btn-primary">Read the casetudy</a></p>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+
+		<!--<div id="fh5co-team">-->
+			<!--<div class="container">-->
+				<!--<div class="row">-->
+					<!--<div class="col-md-10 col-md-offset-1">-->
+						<!--<div class="row">-->
+							<!--<h2 class="section-lead text-center">Leadership</h2>-->
+							<!--<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-staff to-animate">-->
+								<!--<figure>-->
+								<!--<img src="images/user.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive">-->
+								<!--</figure>-->
+								<!--<h3>Will Barrow</h3>-->
+								<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>-->
+								<!--<ul class="fh5co-social">-->
+									<!--<li><a href="#"><i class="icon-twitter"></i></a></li>-->
+									<!--<li><a href="#"><i class="icon-github"></i></a></li>-->
+								<!--</ul> 	-->
+							<!--</div>-->
+							<!--<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-staff to-animate">-->
+								<!--<figure>-->
+								<!--<img src="images/user_2.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive">-->
+								<!--</figure>-->
+								<!--<h3>Max Conversion</h3>-->
+								<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>-->
+								<!--<ul class="fh5co-social">-->
+									<!--<li><a href="#"><i class="icon-twitter"></i></a></li>-->
+									<!--<li><a href="#"><i class="icon-github"></i></a></li>-->
+								<!--</ul> 	-->
+							<!--</div>-->
+							<!--<div class="clearfix visible-sm-block visible-xs-block"></div>-->
+							<!--<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-staff to-animate">-->
+								<!--<figure>-->
+								<!--<img src="images/user_3.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive">-->
+								<!--</figure>-->
+								<!--<h3>Hanson Deck</h3>-->
+								<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>-->
+								<!--<ul class="fh5co-social">-->
+									<!--<li><a href="#"><i class="icon-twitter"></i></a></li>-->
+									<!--<li><a href="#"><i class="icon-github"></i></a></li>-->
+								<!--</ul> 	-->
+							<!--</div>-->
+							<!--<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-staff to-animate">-->
+								<!--<figure>-->
+								<!--<img src="images/user.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive">-->
+								<!--</figure>-->
+								<!--<h3>Sue Shei</h3>-->
+								<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>-->
+								<!--<ul class="fh5co-social">-->
+									<!--<li><a href="#"><i class="icon-twitter"></i></a></li>-->
+									<!--<li><a href="#"><i class="icon-github"></i></a></li>-->
+								<!--</ul> 	-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+
+		<!--<div id="fh5co-services">-->
+			<!--<div class="container">-->
+				<!--<div class="row">-->
+					<!--<div class="col-md-10 col-md-offset-1">-->
+						<!--<div class="row">-->
+							<!--<h2 class="section-lead text-center">Features</h2>-->
+							<!--<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service">-->
+								<!--<div class="fh5co-icon to-animate"><i class="icon-present"></i></div>-->
+								<!--<div class="fh5co-desc">-->
+									<!--<h3>100% Free</h3>-->
+									<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>-->
+								<!--</div>	-->
+							<!--</div>-->
+							<!--<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service">-->
+								<!--<div class="fh5co-icon to-animate"><i class="icon-eye"></i></div>-->
+								<!--<div class="fh5co-desc">-->
+									<!--<h3>Retina Ready</h3>-->
+									<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<div class="clearfix visible-sm-block visible-xs-block"></div>-->
+							<!--<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service">-->
+								<!--<div class="fh5co-icon to-animate"><i class="icon-crop"></i></div>-->
+								<!--<div class="fh5co-desc">-->
+									<!--<h3>Fully Responsive</h3>-->
+									<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>-->
+								<!--</div>-->
+							<!--</div>-->
+
+							<!--<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service">-->
+								<!--<div class="fh5co-icon to-animate"><i class="icon-speedometer"></i></div>-->
+								<!--<div class="fh5co-desc">-->
+									<!--<h3>Lightweight</h3>-->
+									<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>-->
+								<!--</div>	-->
+							<!--</div>-->
+							<!--<div class="clearfix visible-sm-block visible-xs-block"></div>-->
+							<!--<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service">-->
+								<!--<div class="fh5co-icon to-animate"><i class="icon-heart"></i></div>-->
+								<!--<div class="fh5co-desc">-->
+									<!--<h3>Made with Love</h3>-->
+									<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service">-->
+								<!--<div class="fh5co-icon to-animate"><i class="icon-umbrella"></i></div>-->
+								<!--<div class="fh5co-desc">-->
+									<!--<h3>Eco Friendly</h3>-->
+									<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<div class="clearfix visible-sm-block visible-xs-block"></div>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+
+		</div>
+
+	<footer id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center">
+					<p>&copy; CryptoDW. All Rights Reserved. <br>Created by Group 2 </p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<script src="{% static 'JS/banner.js' %}"></script>
+	<!-- jQuery -->
+	<script src="{% static 'JS/try1/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'JS/try1/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'JS/try1/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'JS/try1/jquery.waypoints.min.js' %}"></script>
+	<!-- Main JS -->
+	<script src="{% static 'JS/try1/main.js' %}"></script>
+		<script src="{% static 'JS/history.js' %}"></script>
+
+
+	</div>
+
+</html>

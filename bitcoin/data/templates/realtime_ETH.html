@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Clean &mdash; A free HTML5 Template by FREEHTML5.CO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+        	<!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<!--<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
+	<!--<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,500' rel='stylesheet' type='text/css'>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--in order to use&ndash;&gt;$.inArray("John",arr)-->
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		{% load static %}
+<!--"{% static 'JS/try1/animate.css' %}"-->
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{% static 'try/css/style.css' %}">
+	<!-- Google Webfonts -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/try1/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/try1/icomoon.css' %}">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="{% static 'css/try1/simple-line-icons.css' %}">
+	<!--&lt;!&ndash; Magnific Popup &ndash;&gt;-->
+	<!--<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">-->
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="{% static 'css/try1/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/orderbook_style.css' %}">
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'JS/try1/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'JS/try1/respond.min.js' %}"></script>
+	<![endif]-->
+<!--<script src="{% static 'JS/try/bootstrap.min.js' %}"></script>-->
+        <!--<script src="{% static 'JS/try/jquery.min.js' %}"></script>-->
+
+
+	</head>
+	<body>
+		
+	<header id="fh5co-header" role="banner">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="navbar-header"> 
+						<!-- Mobile Toggle Menu Button -->
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle visible-xs-block" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+						<a class="navbar-brand" href="homepage.html">Clean</a>
+						</div>
+						<div id="fh5co-navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="realtime.html"><span>Home <span class="border"></span></span></a></li>
+								<li><a href="right-sidebar.html"><span>Right Sidebar <span class="border"></span></span></a></li>
+								<li class="active"><a href="left-sidebar.html"><span>Left Sidebar <span class="border"></span></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- END .header -->
+	
+	
+
+	<div id="fh5co-main">
+		<div class="fh5co-intro text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="intro-lead">Realtime Page</h1>
+						<p class="">100% Free HTML5 Template by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+ 	</div>
+    <div class="collapse navbar-collapse" id="navbar">
+
+									<ul class="nav navbar-nav">
+									  <li><a href="#home" class="js-target-scroll">Home</a></li>
+									  <li><a href="#services" class="js-target-scroll">Services</a></li>
+									  <li><a href="#portfolio" class="js-target-scroll">Portfolio</a></li>
+									  <li><a href="#pricing" class="js-target-scroll">Pricing</a></li>
+									  <li><a href="#team" class="js-target-scroll">Team</a></li>
+									  <li><a href="#testimonial" class="js-target-scroll">Testimonial</a></li>
+									  <li><a href="#blog" class="js-target-scroll">Blog</a></li>
+									  <li><a href="#contact" class="js-target-scroll">Contact</a></li>
+									  <li  class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown"> select product </a>
+									 	 <ul class="dropdown-menu" id="product">
+											<li ><a href=#>BTC-USD</a></li>
+											<li ><a href=#>ETH-USD</a></li>
+											<li ><a href=#>LTC-USD</a></li>
+											<!--<li><a href="#">List Sidebar</a></li>-->
+										 </ul>
+									  </li>
+									</ul>
+                          		</div>
+            <div id="myTabContent" class="tab-content">
+
+	<div class="tab-pane fade" id="btc">
+		<p style="color:black;">iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+			TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+	</div>
+	<div class="tab-pane fade" id="btc">
+		<p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+	</div>
+	<div class="tab-pane fade" id="ltc">
+		<p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+		</p>
+	</div>
+</div>
+	<!--<div id="fh5co-content">-->
+			<!--<div class="container">-->
+				<!--<div class="row">-->
+					<!--<div class="col-md-10 col-md-offset-1">-->
+						<!--<div class="row">-->
+							<!--&lt;!&ndash;<div class="col-md-3 animate-box">&ndash;&gt;-->
+								<!--&lt;!&ndash;<h3>Paragraph</h3>&ndash;&gt;-->
+								<!--&lt;!&ndash;<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>&ndash;&gt;-->
+								<!--&lt;!&ndash;<ul class="fh5co-list-check">&ndash;&gt;-->
+									<!--&lt;!&ndash;<li>Far far away</li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li>The word mountains</li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li>Far from the countries</li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li>Bookmarksgrove right</li>&ndash;&gt;-->
+								<!--&lt;!&ndash;</ul>&ndash;&gt;-->
+							<!--&lt;!&ndash;</div>&ndash;&gt;-->
+							 <!---->
+						<!--&lt;!&ndash; 	<div class="col-md-9">-->
+								<!--<p class="animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>-->
+								<!--<p class="animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>-->
+								<!--<p class="animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>-->
+								<!--<p class="animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>-->
+								<!--<p class="animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>-->
+								<!--<p class="animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>-->
+								<!--<p class="animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>-->
+								<!--<p class="animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>-->
+							<!--</div> &ndash;&gt;-->
+						<!--</div>-->
+					<!--&lt;!&ndash;<div id="testchart" style="height: 500px"></div>&ndash;&gt;-->
+					<!--&lt;!&ndash;</div>&ndash;&gt;-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+
+	<!--__________________________________________________-->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="panel-group" id="changecolor">
+					<div class="panel panel-primary" >
+						<div class="panel-heading text-center" >
+							<h4 >ETH-USD Order Book</h4>
+						</div>
+						<div class="panel-body">
+							<!--<h6><a id="source" class="text-right" href="https://www.cryptocompare.com/"><strong>Source:</strong> CryptoCompare</a></h6>-->
+							<div class="row btn-row" id="try">
+								<!--<div class="col-xs-4">-->
+									<!--<h3 id="stream-text">Streaming...</h3>-->
+								<!--</div>-->
+								<!--<div class="col-xs-2">-->
+									<!--<a class="btn btn-success btn-lg subon" id="subscribe">Subscribe</a>-->
+								<!--</div>-->
+								<!--<div class="col-xs-2">-->
+									<!--<a class="btn btn-danger btn-lg" id="unsubscribe">Unsubscribe</a>-->
+								<!--</div>-->
+								<!--<div class="col-xs-12 text-center">-->
+									<!--<h6>Currently streaming from:</h6><i id="sub-exchanges"></i>-->
+								<!--</div>-->
+							</div>
+							<table class="table1" border="0" cellspacing="80" cellpadding="40" align="center">
+								<thead style="color:white; align: center;">
+									<tr>
+										<th>Market</th>
+										<th>Price</th>
+										<th>Quantity</th>
+									</tr>
+
+								</thead>
+								<tbody id="sells">
+
+                                <tr>
+										<th> </th>
+										<th> </th>
+										<th> </th>
+                                </tr>
+
+								</tbody>
+							</table>
+
+                            <table class="table2" border="0" cellspacing="80" cellpadding="40" align="center" >
+								<thead style="color:white; align: center;">
+                                <tr>
+                                        <th> </th>
+                                        <th> </th>
+                                        <th> </th>
+                                </tr>
+								</thead>
+								<tbody id="buys">
+                                <tr>
+										<th> </th>
+										<th> </th>
+										<th> </th>
+                                </tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!--____________________________________________________-->
+
+	
+
+	<footer id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center">
+					<p>&copy; Clean Free HTML5. All Rights Reserved. <br>Created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <script src="{% static 'JS/stream_eth.js' %}"></script>
+	<!-- jQuery -->
+	<script src="{% static 'JS/try1/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'JS/try1/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'JS/try1/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'JS/try1/jquery.waypoints.min.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'JS/try1/jquery.magnific-popup.min.js' %}"></script>
+	<!-- Main JS -->
+	<script src="{% static 'JS/try1/main.js' %}"></script>
+		<script src="{% static 'JS/ccc-streamer-utilities.js' %}"></script>
+
+
+	   <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+       <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+       <script type="text/javascript">
+
+var dom = document.getElementById("testchart");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+option = {
+    title: {
+        text: '折线图堆叠'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['周一','周二','周三','周四','周五','周六','周日']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+            name:'邮件营销',
+            type:'line',
+            stack: '总量',
+            data:[120, 132, 101, 134, 90, 230, 210]
+        },
+        {
+            name:'联盟广告',
+            type:'line',
+            stack: '总量',
+            data:[220, 182, 191, 234, 290, 330, 310]
+        },
+        {
+            name:'视频广告',
+            type:'line',
+            stack: '总量',
+            data:[150, 232, 201, 154, 190, 330, 410]
+        },
+        {
+            name:'直接访问',
+            type:'line',
+            stack: '总量',
+            data:[320, 332, 301, 334, 390, 330, 320]
+        },
+        {
+            name:'搜索引擎',
+            type:'line',
+            stack: '总量',
+            data:[820, 932, 901, 934, 1290, 1330, 1320]
+        }
+    ]
+};
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+
+
+</body>
+</html>

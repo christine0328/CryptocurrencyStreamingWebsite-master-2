@@ -1,0 +1,74 @@
+	body {
+		font-size: 12px;
+		color: #1F2B34;
+	}
+
+	#source {
+		margin: 0;
+	}
+
+	a {
+		color: #1F2B34;
+	}
+
+	a:hover {
+		color: #1F2B34;
+	}
+
+
+	.btn {
+
+		margin: 5% 0 0 0;
+	}
+    .intro-lead {
+        color: blue;
+    }
+	.subon {
+		border-color: blue;
+	}
+
+	.panel {
+		background-color:#1F2B34;
+
+
+
+
+	}
+
+
+	.table1 {
+	    width:100%;
+		color:#FC6A42;
+        vertical-align: middle;
+        text-align: center;
+        align:center;
+        table-layout: fixed;
+
+        	}
+
+	.table2 {
+	width:100%;
+	color:#6EC25F;
+    vertical-align: middle;
+    text-align: center;
+      table-layout: fixed;
+       margin-top: 10%;
+
+
+	}
+	
+	#sub-exchanges {
+		color:gray;
+	}
+
+.flash{
+  animation: blink 1s 2;
+  animation-iteration-count: infinite;
+
+}
+@keyframes blink{
+  50% {
+    color:white;
+    background-color:black;
+  }
+}
